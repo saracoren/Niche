@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Niche Web Developer Exercise</title>
+
+    <!--
+        Colors
+        Tan:                #FAF3ED
+        Light Green:        #D0ECDD
+        Green:              #227146
+        Light Gray:         #F1F1F1
+        Med Gray:           #657076
+        Dark Gray:          #212A37
+    -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+	<div class="question">
+        <div class="question-vote-container">
+            <div class="question-vote">
+                <svg class="thumb" width="15" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 21H18C18.83 21 19.54 20.5 19.84 19.78L22.86 12.73C22.95 12.5 23 12.26 23 12V10C23 8.9 22.1 8 21 8H14.69L15.64 3.43L15.67 3.11C15.67 2.7 15.5 2.32 15.23 2.05L14.17 1L7.58 7.59C7.22 7.95 7 8.45 7 9V19C7 20.1 7.9 21 9 21ZM9 9L13.34 4.66L12 10H21V12L18 19H9V9ZM1 9H5V21H1V9Z"/>
+                </svg>
+                <span class="text-med-gray">22</span>
+                <svg class="thumb" width="15" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM19 3H23V15H19V3Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="main-content-container">
+            <div class="user-container">
+                <div class="user">
+                    <img src="assets/evan.jpg" />
+                    <span class="user-name text-green">Evan</span>
+                    <span class="day text-med-gray">3 days ago</span>
+                </div>
+                <div class="actions">
+                    <span class="share text-green">Share</span>
+                </div>
+            </div>
+            <div class="content text-dark-gray">
+                What's the best undergraduate major if I'm interested in going to med school?
+            </div>
+            <div class="response-total">4 responses</div>
+            <div class="replies">
+                <div class="top-replies">
+                    <div class="reply">
+                        <div class="text-dark-gray">Biology</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">48</span>
+                            <span class="heart-icon-empty"></span>
+                        </div> 
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Psychology</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">32</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Athletic training</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">24</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Biochemistry</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">8</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-responses">
+                <div class="user-response text-green">
+                    Add your response
+                </div>
+                
+            </div>
+        </div>
+	</div>
+
+    <div class="question">
+        <div class="question-vote-container">
+            <div class="question-vote">
+                <svg class="thumb" width="15" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 21H18C18.83 21 19.54 20.5 19.84 19.78L22.86 12.73C22.95 12.5 23 12.26 23 12V10C23 8.9 22.1 8 21 8H14.69L15.64 3.43L15.67 3.11C15.67 2.7 15.5 2.32 15.23 2.05L14.17 1L7.58 7.59C7.22 7.95 7 8.45 7 9V19C7 20.1 7.9 21 9 21ZM9 9L13.34 4.66L12 10H21V12L18 19H9V9ZM1 9H5V21H1V9Z"/>
+                    </svg>
+                <span class="text-med-gray">32</span>
+                <svg class="thumb" width="15" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM19 3H23V15H19V3Z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="main-content-container">
+            <div class="user-container">
+                <div class="user">
+                    <img src="assets/alexis.jpg" />
+                    <span class="user-name text-green">Alexis</span>
+                    <span class="day text-med-gray">6 days ago</span>
+                </div>
+                <div class="actions">
+                    <span class="share text-green">Share</span>
+                </div>
+            </div>
+            <div class="content text-dark-gray">
+                Which AP classes are going to get me the best college credits as an engineering major?
+            </div>
+            <div class="response-total">7 responses</div>
+            <div class="replies">
+                <div class="top-replies">
+                    <div class="reply">
+                        <div class="text-dark-gray">Physics 1</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">17</span>
+                            <span class="heart-icon-empty"></span>
+                        </div> 
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Calculus BC</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">13</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Physics C</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">8</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Latin</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">6</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="additional-replies hide">
+                    <div class="reply">
+                        <div class="text-dark-gray">English</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">4</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Calculus AB</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">1</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <div class="text-dark-gray">Logic</div>
+                        <div class="answer-vote vote-once">
+                            <span class="heart-count">1</span>
+                            <span class="heart-icon-empty"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-responses">
+                <div class="user-response text-green">
+                    Add your response
+                </div>
+                <div class="view-link more text-green">
+                    View 3 more responses
+                </div>
+            </div>
+        </div>
+	</div>
+    
+</body>
+</html>
+
+
+
